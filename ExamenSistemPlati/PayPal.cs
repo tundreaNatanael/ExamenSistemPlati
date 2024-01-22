@@ -3,9 +3,8 @@ namespace ExamenSistemPlati
 {
 	public class PayPal:PaymentSystem
 	{
-		public PayPal(decimal total)
-			:base (total)
+        public override void Print(decimal total)
 		{ Console.WriteLine("PayPal Payment System was used"); }
-	}
+    }
 }
 

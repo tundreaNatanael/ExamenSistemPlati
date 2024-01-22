@@ -21,11 +21,11 @@ CryptoWallet");
             Console.Write(">>> Type of payment (please type exactly the same word as above):  ");
             string systemtype = Console.ReadLine();
 
-            if (systemtype== "OnlineCard") OrderProcessor.FulfillOrder(new Order(customer, DateTime.Now, total), new OnlineCard(total));
+            if (systemtype== "OnlineCard") OrderProcessor.FulfillOrder(new Order(customer, DateTime.Now, total), new OnlineCard());
             else
             {
-                if (systemtype == "PayPal") OrderProcessor.FulfillOrder(new Order(customer, DateTime.Now, total), new PayPal(total));
-                else OrderProcessor.FulfillOrder(new Order(customer, DateTime.Now, total), new CryptoWallet(total));
+                if (systemtype == "PayPal") OrderProcessor.FulfillOrder(new Order(customer, DateTime.Now, total), new PayPal());
+                else OrderProcessor.FulfillOrder(new Order(customer, DateTime.Now, total), new CryptoWallet());
             }
             Console.Read();
             

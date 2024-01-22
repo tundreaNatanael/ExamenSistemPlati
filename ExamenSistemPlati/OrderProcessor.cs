@@ -6,7 +6,7 @@ namespace ExamenSistemPlati
 		public static void FulfillOrder(Order order, PaymentSystem paymentSystem)
 		{
 			Console.WriteLine($"{order.Customer} bought at {order.Date} for {order.Total} $");
-			PaymentSystem temporary = paymentSystem;
+			paymentSystem.Print(order.Total);
 		}
 	}
 }

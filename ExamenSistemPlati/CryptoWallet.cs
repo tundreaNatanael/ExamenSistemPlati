@@ -3,9 +3,8 @@ namespace ExamenSistemPlati
 {
 	public class CryptoWallet:PaymentSystem
 	{
-		public CryptoWallet(decimal total)
-			:base (total)
-		{ Console.WriteLine("Crypto Wallet Payment System was used"); }
-	}
+        public override void Print(decimal total)
+		{ Console.WriteLine("CryptoWallet Payment System was used"); }
+    }
 }
 

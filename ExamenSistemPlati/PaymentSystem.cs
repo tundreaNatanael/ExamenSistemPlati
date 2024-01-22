@@ -3,7 +3,7 @@ namespace ExamenSistemPlati
 {
 	public abstract class PaymentSystem
 	{
-		public PaymentSystem(decimal total) { }
+		public abstract void Print(decimal total);
 	}
 }
 
